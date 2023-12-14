@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Image at the Start -->
+    <ImageView
+        android:id="@+id/startImageView"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_launcher_background"/>
+    <!-- Error Name TextView -->
+    <TextView
+        android:id="@+id/logTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/startImageView"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="Error Name"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- Error Description TextView -->
+    <TextView
+        android:layout_toEndOf="@id/startImageView"
+        android:id="@+id/LogDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logTitle"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="Description of the error goes here."
+        android:textSize="14sp"/>
+
+    <!-- Arrow Image at the End -->
+    <ImageView
+        android:id="@+id/arrowImageView"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/arrow_right"
+        android:contentDescription="go to logs"/>
+
+</RelativeLayout>

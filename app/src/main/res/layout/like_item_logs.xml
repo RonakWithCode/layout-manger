@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Image at the Start -->
+    <ImageView
+        android:id="@+id/userProfileOfliker"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_launcher_background"/>
+    <TextView
+        android:id="@+id/userNameWhoLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/userProfileOfliker"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_toEndOf="@id/userProfileOfliker"
+        android:id="@+id/HowLongLikeIt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userNameWhoLike"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textSize="14sp"/>
+
+    <!-- Arrow Image at the End -->
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

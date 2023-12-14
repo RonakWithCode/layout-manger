@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">layout manger</string>
+    <string name="menu_icon_description">Open Settings Menu</string>
+    <string name="like_icon_description">Like</string>
+    <string name="comment_icon_description">Comment</string>
+    <string name="share_icon_description">Share</string>
+
+</resources>
